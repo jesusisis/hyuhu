@@ -1,0 +1,61 @@
+2025-10-23T19:27:01.558Z	Initializing build environment...
+2025-10-23T19:27:09.737Z	Success: Finished initializing build environment
+2025-10-23T19:27:10.815Z	Cloning repository...
+2025-10-23T19:27:12.334Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2025-10-23T19:27:12.335Z	Restoring from dependencies cache
+2025-10-23T19:27:12.337Z	Restoring from build output cache
+2025-10-23T19:27:12.828Z	Installing project dependencies: npm clean-install --progress=false
+2025-10-23T19:27:15.137Z	npm warn deprecated rollup-plugin-inject@3.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.
+2025-10-23T19:27:15.191Z	npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+2025-10-23T19:27:18.525Z	
+2025-10-23T19:27:18.525Z	added 63 packages, and audited 64 packages in 5s
+2025-10-23T19:27:18.526Z	
+2025-10-23T19:27:18.526Z	8 packages are looking for funding
+2025-10-23T19:27:18.526Z	  run `npm fund` for details
+2025-10-23T19:27:18.549Z	
+2025-10-23T19:27:18.549Z	3 vulnerabilities (2 moderate, 1 high)
+2025-10-23T19:27:18.550Z	
+2025-10-23T19:27:18.550Z	To address issues that do not require attention, run:
+2025-10-23T19:27:18.551Z	  npm audit fix
+2025-10-23T19:27:18.551Z	
+2025-10-23T19:27:18.552Z	To address all issues (including breaking changes), run:
+2025-10-23T19:27:18.552Z	  npm audit fix --force
+2025-10-23T19:27:18.553Z	
+2025-10-23T19:27:18.553Z	Run `npm audit` for details.
+2025-10-23T19:27:18.630Z	Executing user deploy command: npx wrangler deploy
+2025-10-23T19:27:20.098Z	
+2025-10-23T19:27:20.098Z	 ⛅️ wrangler 3.114.15 (update available 4.45.0)
+2025-10-23T19:27:20.099Z	-----------------------------------------------
+2025-10-23T19:27:20.099Z	
+2025-10-23T19:27:22.801Z	▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+2025-10-23T19:27:22.801Z	
+2025-10-23T19:27:22.808Z	  Please update to the latest version to prevent critical errors.
+2025-10-23T19:27:22.809Z	  Run `npm install --save-dev wrangler@4` to update to the latest version.
+2025-10-23T19:27:22.809Z	  After installation, run Wrangler with `npx wrangler`.
+2025-10-23T19:27:22.810Z	
+2025-10-23T19:27:22.810Z	
+2025-10-23T19:27:22.833Z	▲ [WARNING] Failed to match Worker name. Your config file is using the Worker name "ip-geolocation-api", but the CI system expected "swami8u". Overriding using the CI provided Worker name. Workers Builds connected builds will attempt to open a pull request to resolve this config name mismatch.
+2025-10-23T19:27:22.833Z	
+2025-10-23T19:27:22.833Z	
+2025-10-23T19:27:25.300Z	Total Upload: 146.71 KiB / gzip: 31.35 KiB
+2025-10-23T19:27:27.238Z	Your worker has access to the following bindings:
+2025-10-23T19:27:27.238Z	- KV Namespaces:
+2025-10-23T19:27:27.238Z	  - CACHE: preview_id
+2025-10-23T19:27:27.238Z	- Vars:
+2025-10-23T19:27:27.238Z	  - API_VERSION: "2.0.0"
+2025-10-23T19:27:27.238Z	  - ENABLE_CACHING: "true"
+2025-10-23T19:27:27.238Z	  - compatibility_flags: [
+2025-10-23T19:27:27.238Z	 "nodejs_compat"
+2025-10-23T19:27:27.238Z	]
+2025-10-23T19:27:27.239Z	
+2025-10-23T19:27:27.243Z	✘ [ERROR] A request to the Cloudflare API (/accounts/34e1d2c165d5a184313ff3e560c84a91/workers/scripts/swami8u/versions) failed.
+2025-10-23T19:27:27.243Z	
+2025-10-23T19:27:27.244Z	  KV namespace 'preview_id' is not valid.  [code: 10042]
+2025-10-23T19:27:27.244Z	  
+2025-10-23T19:27:27.244Z	  If you think this is a bug, please open an issue at: https://github.com/cloudflare/workers-sdk/issues/new/choose
+2025-10-23T19:27:27.244Z	
+2025-10-23T19:27:27.244Z	
+2025-10-23T19:27:27.244Z	
+2025-10-23T19:27:27.244Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-10-23T19:27:27.280Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-10-23_19-27-19_526.log"
+2025-10-23T19:27:27.326Z	Failed: error occurred while running deploy command

@@ -1,0 +1,9 @@
+{
+  "name": "ip-geolocation-api",
+  "main": "src/index.js",
+  "compatibility_date": "2025-10-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "build": {
+    "command": ""
+  }
+}

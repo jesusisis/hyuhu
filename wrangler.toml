@@ -1,0 +1,25 @@
+name = "ip-geolocation-api"
+main = "src/index.js"
+compatibility_date = "2025-10-21"
+workers_dev = true
+
+# KV namespace removed for deployment
+# Your app will work without caching, just slower
+# To add KV later: npx wrangler kv:namespace create CACHE
+
+# Environment variables
+[vars]
+API_VERSION = "2.0.0"
+ENABLE_CACHING = "true"
+
+# Node.js compatibility
+compatibility_flags = ["nodejs_compat"]
+
+# Resource limits
+[limits]
+cpu_ms = 50
+
+# Optional: R2 storage for IP database (if needed in future)
+# [[r2_buckets]]
+# binding = "IP_DATABASE"
+# bucket_name = "ip-geolocation-data"
